@@ -35,10 +35,30 @@ html{
 .header__nav-link:hover{
     color: var(--light-highlight);
 }
+.footer{
+    font-size: 18px;
+    color: var(--dark-highlight);
 
+}
 a{
     color: var(--dark-highlight); 
 }
 a:hover{
     color: var(--light-highlight);
 }
+ul {
+    list-style: none;
+}
+.hashtag{
+   background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 2px;
+    cursor: pointer;
+}
+
