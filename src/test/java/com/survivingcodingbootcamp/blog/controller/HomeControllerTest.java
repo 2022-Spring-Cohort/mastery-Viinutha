@@ -1,6 +1,7 @@
 package com.survivingcodingbootcamp.blog.controller;
 
 import com.survivingcodingbootcamp.blog.model.Topic;
+import com.survivingcodingbootcamp.blog.repository.HashTagRepository;
 import com.survivingcodingbootcamp.blog.repository.TopicRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -22,10 +23,12 @@ public class HomeControllerTest {
     private Model model;
     private TopicRepository topicRepo;
 
+
     @BeforeEach
     void setUp() {
         topicRepo = mock(TopicRepository.class);
-        underTest = new HomeController(topicRepo);
+        HashTagRepository hashTagRepo = mock(HashTagRepository.class);
+        underTest = new HomeController(topicRepo,hashTagRepo);
         model = mock(Model.class);
     }
 
